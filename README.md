@@ -55,3 +55,13 @@ Discounted price = Original price - Discount
 Discounted price = $1,000 - $200
 Discounted price = $800
 So, with a 20% discount, you would pay $800.`
+
+## Link to paper
+
+[Round Trip Translation Defence against Large Language Model Jailbreaking Attacks](https://arxiv.org/abs/2402.13517)
+
+## Citation
+
+Feel free to email me at <canaany@student.unimelb.edu.au>
+
+
