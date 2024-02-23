@@ -6,7 +6,7 @@ Large language models (LLMs) are susceptible to social-engineered attacks that a
 
 ## Getting Started
 
-We provide the python file `RTT.py` for Round Trip Translation with 3 different languages from non Indo-European Family. Please add your GOOGLE_APPLICATION_CREDENTIALS json file tp get started.
+We provide the python file `RTT.py` for Round Trip Translation with 3 different languages from non Indo-European Family. Please add your GOOGLE_APPLICATION_CREDENTIALS json file to get started.
 
 ## Examples
 
