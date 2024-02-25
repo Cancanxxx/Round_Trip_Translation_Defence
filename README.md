@@ -63,5 +63,11 @@ So, with a 20% discount, you would pay $800.`
 ## Citation
 
 Feel free to email me at <canaany@student.unimelb.edu.au>
-
+```bibtex
+  @article{yung2024round,
+  title={Round Trip Translation Defence against Large Language Model Jailbreaking Attacks},
+  author={Yung, Canaan and Dolatabadi, Hadi Mohaghegh and Erfani, Sarah and Leckie, Christopher},
+  journal={arXiv preprint arXiv:2402.13517},
+  year={2024}
+}
 
