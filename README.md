@@ -2,7 +2,7 @@
 
 ## Abstract
 
-Large language models (LLMs) are susceptible to social-engineered attacks that are human-interpretable but require a high level of comprehension for LLMs to counteract. The off-the-shelf defensive measures can only mitigate less than half of these attacks at most. To address this issue, we propose the Round Trip Translation (RTT) method, the first algorithm specifically designed to defend against social-engineered attacks on LLMs. RTT paraphrases the adversarial prompt and generalizes the idea conveyed, making it easier for LLMs to detect induced harmful behavior. This method is versatile, lightweight, and transferrable to different LLMs. Our defense successfully mitigated over 70\% of Prompt Automatic Iterative Refinement (PAIR) attacks, which is currently the most vigorous defense to the best of our knowledge. We are also the first to attempt mitigating the MathsAttack and reduced its attack success rate by almost 40\%. Our code is publicly available at google.com.
+Large language models (LLMs) are susceptible to social-engineered attacks that are human-interpretable but require a high level of comprehension for LLMs to counteract. Existing defenses mitigate less than half of these attacks. To address this, we propose the Round Trip Translation (RTT) method, a pre-processing algorithm designed to defend against social-engineered attacks on LLMs. RTT translates adversarial prompts into several non-Indo-European languages and back to English, rephrasing and broadening them to provide LLMs with more information. Despite the simplicity of this method, it directly impacts the prompt embeddings and increases their global intrinsic dimensionality (GID), hence enabling the detection of subtle adversarial intent and revealing harmful patterns while preserving semantic integrity. We demonstrate that RTT provides more information to LLMs by investigating the GID, which quantifies the diversity and amount of information in the prompt, with experiments showing that adversarial prompts’ GID increases by around 10\% after RTT. Additionally, RTT is computationally efficient compared to existing methods, making it a scalable, lightweight, and transferable solution for real-world applications across different LLMs. Our defense mitigated social-engineered attacks, such as Prompt Automatic Iterative Refinement (PAIR), halving the attack success rate compared to state-of-the-art defenses.
 
 ## Getting Started
 
@@ -55,19 +55,4 @@ Discounted price = Original price - Discount
 Discounted price = $1,000 - $200
 Discounted price = $800
 So, with a 20% discount, you would pay $800.`
-
-## Link to paper
-
-[Round Trip Translation Defence against Large Language Model Jailbreaking Attacks](https://arxiv.org/abs/2402.13517)
-
-## Citation
-
-Feel free to email me at <canaany@student.unimelb.edu.au>
-```bibtex
-  @article{yung2024round,
-  title={Round Trip Translation Defence against Large Language Model Jailbreaking Attacks},
-  author={Yung, Canaan and Dolatabadi, Hadi Mohaghegh and Erfani, Sarah and Leckie, Christopher},
-  journal={arXiv preprint arXiv:2402.13517},
-  year={2024}
-}
 
